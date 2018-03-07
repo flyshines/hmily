@@ -6,9 +6,9 @@ server:
 spring:
     datasource:
         driver-class-name:  com.mysql.jdbc.Driver
-        url: jdbc:mysql://192.168.1.68:3306/tcc_account?useUnicode=true&characterEncoding=utf8
-        username: xiaoyu
-        password: Wgj@555888
+        url: jdbc:mysql://localhost:3306/tcc_account?useUnicode=true&characterEncoding=utf8
+        username: root
+        password: root
 
 hmily:
     tcc :
@@ -20,20 +20,20 @@ hmily:
         repositorySupport : db
         tccDbConfig :
                  driverClassName  : com.mysql.jdbc.Driver
-                 url :  jdbc:mysql://192.168.1.68:3306/tcc?useUnicode=true&amp;characterEncoding=utf8
-                 username : xiaoyu
-                 password : Wgj@555888
+                 url :  jdbc:mysql://localhost:3306/tcc?useUnicode=true&amp;characterEncoding=utf8
+                 username : root
+                 password : root
 
-       # repositorySupport : redis
-       #         hostName  : 192.168.1.68
-       #         port      :  6379
-       #         password  :
-
-
-       # repositorySupport : zookeeper
-       #         host      : 92.168.1.73:2181
-       #         sessionTimeOut      :  100000
-       #         rootPath  : /tcc
+      #repositorySupport : redis
+      #        hostName  : localhost
+      #        port      : 6379
+      #        password  : qingning
+      #
+      #
+      #repositorySupport : zookeeper
+      #        host      : localhost:2181
+      #        sessionTimeOut      :  100000
+      #        rootPath  : /tcc
 
        # repositorySupport : mongodb
        #       mongoDbUrl  : 192.168.1.68:27017
